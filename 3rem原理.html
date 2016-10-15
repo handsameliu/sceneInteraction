@@ -28,6 +28,10 @@
             height:1rem;
             background-color: #007aff;
         }
+        /*
+            rem响应式布局
+            rem是相对单位：相对于页面的根元素html的字体大小设定的值
+        */
     </style>
 </head>
 <body>
@@ -35,4 +39,8 @@
     handsome
 </div>
 </body>
+<script type="text/javascript">
+    //根据当前页面的宽度和设计稿的比例，动态调整根元素html的字体大小，这样我们之前编写的所有以rem为单位的样式值都会跟着改变
+    document.documentElement.style.fontSize = document.documentElement.clientWidth/750*100+'px';
+</script>
 </html>
